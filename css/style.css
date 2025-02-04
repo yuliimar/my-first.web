@@ -89,3 +89,49 @@ a {
   font-size: 24px;
   text-decoration: none;
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacio entre el correo y los íconos */
+  margin-top: 20px;
+}
+
+/* Estilo para el correo electrónico */
+.email {
+  font-size: 1.1em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.email a {
+  color: #000;
+  text-decoration: none;
+  
+}
+
+.email a:hover {
+  color: #4d4855; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para los íconos de contacto */
+.contact-icons {
+  display: flex;
+  gap: 20px; /* Espacio entre los íconos */
+}
+
+.contact-icons a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el ícono y el texto */
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #4d4855; /* Cambia el color al pasar el mouse */
+}
