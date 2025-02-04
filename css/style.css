@@ -135,6 +135,31 @@ a {
 .contact-icons a:hover {
   color: #7a7582; /* Cambia el color al pasar el mouse */
 }
+
+/* scrollTopBtn */
+#scrollTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(236, 78, 78);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Oculto al inicio */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: rgb(200, 50, 50);
+  transform: scale(1.1);
+}
+
+
 /* footer diseño */
 footer {
   background-color: #4d4855;
