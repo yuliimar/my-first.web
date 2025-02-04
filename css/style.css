@@ -43,10 +43,17 @@ nav ul li a {
   font-weight: bold;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 section {
   padding: 50px 20px;
   max-width: 800px;
   margin: auto;
+  animation: fadeIn 1s ease-in-out;
+
 }
 
 h2 {
