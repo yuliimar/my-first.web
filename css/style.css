@@ -56,6 +56,17 @@ section {
 
 }
 
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+  .profile-photo {
+      width: 120px;
+      height: 120px;
+  }
+}
+
 h2 {
   border-bottom: 2px solid #000;
   display: inline-block;
