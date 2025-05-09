@@ -80,18 +80,16 @@ a {
   text-decoration: none;
 }
 
-.contact {
-  .contact__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 15px; /* Espacio entre el correo y los íconos */
-    margin-top: 20px;
-  }
-  .contact__icon {
-    width: 24px;
-    height: 24px;
-  }
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px; /* Espacio entre el correo y los íconos */
+  margin-top: 20px;
+}
+.contact__icon {
+  width: 24px;
+  height: 24px;
 }
 
 /* scrollTopBtn */
