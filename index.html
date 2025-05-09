@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuliia Martynovych - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/x-icon" href="img/YM.ico" />
   </head>
   <body>
@@ -37,9 +43,9 @@
       <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="project-card">
+        <div class="project__card">
           <h3>Landing Page</h3>
-          <p>
+          <p class="project__card-text">
             A responsive landing page with a modern design, created with HTML
             and CSS.
           </p>
@@ -57,9 +63,11 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project__card">
           <h3>Calendar</h3>
-          <p>Interactive calendar with basic month navigation elements.</p>
+          <p class="project__card-text">
+            Interactive calendar with basic month navigation elements.
+          </p>
           <div class="project-links">
             <a
               href="https://yuliimar.github.io/layout_calendar/"
@@ -78,17 +86,21 @@
       <section class="contact" id="contact">
         <h2>Contact</h2>
         <div class="contact__container">
-          <a href="mailto:yuliiamartynovych@gmail.com"
+          <a class="contact__link" href="mailto:yuliiamartynovych@gmail.com"
             ><img class="contact__icon" src="img/gmail.png" alt="Email Yuliia"
           /></a>
 
-          <a href="https://wa.me/+34689287088" target="_blank"
+          <a
+            class="contact__link"
+            href="https://wa.me/+34689287088"
+            target="_blank"
             ><img
               class="contact__icon"
               src="img/whatsapp.png"
               alt="Whatsapp Yuliia"
           /></a>
           <a
+            class="contact__link"
             href="https://www.linkedin.com/in/yuliia-martynovych-01570817b"
             target="_blank"
             ><img
@@ -99,9 +111,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>© 2025 Yuliia Martynovych</p>
     </footer>
-    <a href="#top" id="scrollTopBtn">🔝</a>
+    <a href="#top" id="scrollTopBtn" aria-label="Scroll to top">🔝</a>
   </body>
 </html>
