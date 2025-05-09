@@ -1,49 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuliia Martynovych - Portafolio</title>
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="icon" type="image/x-icon" href="img/YM.ico">
-</head>
-<body>
-    <header id="top">
-      <img src="img/perfil.jpg" alt="foto de yuliia martynovych" class="profile-photo">
-        <h1>Yuliia Martynovych</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuliia Martynovych - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/YM.ico" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <img
+        src="img/perfil.jpg"
+        alt="foto de yuliia martynovych"
+        class="profile-photo"
+      />
+      <h1>Yuliia Martynovych</h1>
+      <nav class="header__info">
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Hola, soy Yuliia Martynovych, estudiante de programación con conocimientos en HTML, CSS y JavaScript básico. Me apasiona el diseño web y la tecnología.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <p>Aquí mostraré mis proyectos más recientes.</p>
-    </section>
-    
-    <section id="contact">
-      <h2>Contacto</h2>
-      <div class="contact-container">
-          <p class="email">📧 <a href="mailto:yuliiamartynovych@gmail.com" class="mail">yuliiamartynovych@gmail.com</a></p>
-          <div class="contact-icons">
-              <a href="https://wa.me/+34689287088" target="_blank">📱 WhatsApp</a>
-              <a href="https://www.instagram.com/yuliiamartynovych/" target="_blank">📸 Instagram</a>
-          </div>
-      </div>
-  </section>
 
-  <footer>
-    <p>© 2025 Yuliia Martynovych | Desarrollado con ❤️</p>
-</footer>
-<a href="#top" id="scrollTopBtn">🔝</a>
-</body>
+    <section id="about">
+      <h2>About me</h2>
+      <p>
+        Hi, I'm Yuliia Martynovych, a programming student with knowledge of
+        HTML, CSS, and basic JavaScript. I'm passionate about web design and
+        technology.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Little Projects</h2>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>
+          A responsive landing page with a modern design, created with HTML and
+          CSS.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://yuliimar.github.io/layout_landing-page/"
+            target="_blank"
+            >🌐 Live Demo</a
+          >
+          <a
+            href="https://github.com/yuliimar/layout_landing-page"
+            target="_blank"
+            >💻 GitHub</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Calendar</h3>
+        <p>Interactive calendar with basic month navigation elements.</p>
+        <div class="project-links">
+          <a href="https://yuliimar.github.io/layout_calendar/" target="_blank"
+            >🌐 Live Demo</a
+          >
+          <a href="https://github.com/yuliimar/layout_calendar" target="_blank"
+            >💻 GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <div class="contact__container">
+        <a href="mailto:yuliiamartynovych@gmail.com"
+          ><img class="contact__icon" src="img/gmail.png" alt=""
+        /></a>
+
+        <a href="https://wa.me/+34689287088" target="_blank"
+          ><img class="contact__icon" src="img/whatsapp.png" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/yuliia-martynovych-01570817b"
+          target="_blank"
+          ><img class="contact__icon" src="img/linkedin.png" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Yuliia Martynovych</p>
+    </footer>
+    <a href="#top" id="scrollTopBtn">🔝</a>
+  </body>
 </html>
