@@ -86,35 +86,68 @@
       <section class="contact" id="contact">
         <h2>Contact</h2>
         <div class="contact__container">
-          <a class="contact__link" href="mailto:yuliiamartynovych@gmail.com"
-            ><img class="contact__icon" src="img/gmail.png" alt="Email Yuliia"
+          <a
+            class="contact__link"
+            href="mailto:yuliiamartynovych@gmail.com"
+            aria-label="Send email"
+            ><img
+              class="contact__icon"
+              src="img/gmail.png"
+              alt="Email Yuliia"
+              width="40"
+              height="40"
+              loading="lazy"
           /></a>
 
           <a
             class="contact__link"
             href="https://wa.me/+34689287088"
             target="_blank"
+            rel="noopener"
+            aria-label="Contact by WhatsApp"
             ><img
               class="contact__icon"
               src="img/whatsapp.png"
               alt="Whatsapp Yuliia"
+              width="40"
+              height="40"
+              loading="lazy"
           /></a>
           <a
             class="contact__link"
             href="https://www.linkedin.com/in/yuliia-martynovych-01570817b"
             target="_blank"
+            rel="noopener"
+            aria-label="Linkedin Yuliia"
             ><img
               class="contact__icon"
               src="img/linkedin.png"
               alt="Linkedin Yuliia"
+              width="40"
+              height="40"
+              loading="lazy"
+          /></a>
+          <a
+            class="contact__link"
+            href="https://github.com/yuliimar"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub Yuliia"
+            ><img
+              class="contact__icon"
+              src="img/github.png"
+              alt="GitHub Yuliia"
+              width="40"
+              height="40"
+              loading="lazy"
           /></a>
         </div>
       </section>
     </main>
     <footer role="contentinfo">
-      <p>© 2025 Yuliia Martynovych</p>
+      <p><span id="current-year">2025 </span> Yuliia Martynovych</p>
     </footer>
-    <a href="#top" id="scrollTopBtn" aria-label="Scroll to top">🔝</a>
+    <a href="#top" id="scrollTopBtn" aria-label="Back to top">🔝</a>
     <script>
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
