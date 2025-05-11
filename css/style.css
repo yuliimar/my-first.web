@@ -12,26 +12,62 @@ body {
 }
 
 /* Botones de idioma */
+
+@media (max-width: 320px) {
+  .language-buttons {
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+
 .language-buttons {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   z-index: 100;
+  display: flex;
+  gap: 5px;
+
+  padding: 5px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
 }
 
 .language-buttons button {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid white;
   color: white;
-  padding: 5px 10px;
+  padding: 4px 8px;
+  font-size: 12px;
   margin: 0 3px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
+@media (max-width: 480px) {
+  .header {
+    padding-top: 50px;
+  }
+
+  .language-buttons {
+    top: 5px;
+    right: 5px;
+  }
+
+  .profile-photo {
+    margin-top: 20px; /* Empuja la foto hacia abajo */
+  }
+}
+
 .language-buttons button:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+/* Estado activo */
+.language-buttons button.active {
+  background: white;
+  color: #4d4855;
+  font-weight: bold;
 }
 
 h2 {

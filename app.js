@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// 1. Objeto con todas las traducciones
+// ==================== SISTEMA DE TRADUCCIÓN ====================
 const translations = {
   en: {
     title: "Yuliia Martynovych",
@@ -35,7 +35,7 @@ const translations = {
     about: "Sobre mí",
     projects: "Proyectos",
     my_projects: "Mis Proyectos",
-    contact: "Contactar",
+    contact: "Contacto",
     welcome:
       "Hola, soy Yuliia Martynovych, estudiante de programación con conocimientos de HTML, CSS y JavaScript básico. Disfruto creando interfaces claras y fáciles de usar, y mejorando constantemente mis habilidades de programación.",
   },
@@ -50,9 +50,21 @@ const translations = {
   },
 };
 
-// 2. cambiar idioma
+// Función para cambiar idioma
 function translatePage(lang) {
-  // Busca TODOS los elementos con data-translate
+  // Actualizar botones activos
+  document.querySelectorAll(".language-buttons button").forEach((btn) => {
+    btn.classList.remove("active");
+    if (
+      (lang === "en" && btn.textContent === "EN") ||
+      (lang === "es" && btn.textContent === "ES") ||
+      (lang === "uk" && btn.textContent === "UK")
+    ) {
+      btn.classList.add("active");
+    }
+  });
+
+  // Actualizar contenido
   document.querySelectorAll("[data-translate]").forEach((element) => {
     const key = element.getAttribute("data-translate");
     if (translations[lang][key]) {
@@ -60,12 +72,22 @@ function translatePage(lang) {
     }
   });
 
-  // idioma seleccionado
   localStorage.setItem("language", lang);
 }
 
-// 3. idioma guardado al iniciar
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("language") || "en";
-  translatePage(savedLang);
+// Inicialización (cargar idioma guardado o usar inglés por defecto)
+const savedLang = localStorage.getItem("language") || "en";
+translatePage(savedLang);
+
+// Eventos para los botones de idioma
+document.querySelectorAll(".language-buttons button").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const lang =
+      this.textContent === "EN"
+        ? "en"
+        : this.textContent === "ES"
+        ? "es"
+        : "uk";
+    translatePage(lang);
+  });
 });
