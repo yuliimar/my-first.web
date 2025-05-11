@@ -11,6 +11,29 @@ body {
   color: #1c1c1e;
 }
 
+/* Botones de idioma */
+.language-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.language-buttons button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.language-buttons button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 h2 {
   border-bottom: 2px solid #000;
   display: inline-block;
@@ -150,25 +173,38 @@ a {
 }
 
 /* scrollTopBtn */
-#scrollTopBtn {
+
+.scroll__top {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
   width: 50px;
   height: 50px;
-  text-decoration: none;
-  background-color: #e1e1e1;
-  border: none;
-  border-radius: 50%;
+  background: #e1e1e1;
   color: #000;
-  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  cursor: pointer;
 }
 
-#scrollTopBtn:hover {
-  transform: translateY(-2px);
+.scroll__top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll__top:hover {
+  background: #d0d0d0;
+  transform: translateY(-3px);
 }
 
 /* footer diseño */

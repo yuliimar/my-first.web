@@ -20,19 +20,26 @@
         alt="portrait of Yuliia Martynovych"
         class="profile-photo"
       />
-      <h1>Yuliia Martynovych</h1>
+
+      <div class="language-buttons">
+        <button onclick="translatePage('en')">EN</button>
+        <button onclick="translatePage('es')">ES</button>
+        <button onclick="translatePage('uk')">UK</button>
+      </div>
+
+      <h1 data-translate="title">Yuliia Martynovych</h1>
       <nav class="header__info" role="navigation" aria-label="Main menu">
         <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a data-translate="about" href="#about">About me</a></li>
+          <li><a data-translate="projects" href="#projects">Projects</a></li>
+          <li><a data-translate="contact" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="about">
-        <h2>About me</h2>
-        <p>
+      <section class="about">
+        <h2 data-translate="about">About me</h2>
+        <p data-translate="welcome">
           Hi, I'm Yuliia Martynovych, a programming student with knowledge of
           HTML, CSS, and basic JavaScript. I'm passionate about web design and
           technology. I enjoy creating clean, user-friendly interfaces and
@@ -40,8 +47,8 @@
         </p>
       </section>
 
-      <section id="projects">
-        <h2>My Projects</h2>
+      <section class="projects">
+        <h2 data-translate="my_projects">My Projects</h2>
 
         <div class="project__card">
           <h3>Landing Page</h3>
@@ -83,8 +90,8 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
+      <section class="contact">
+        <h2 data-translate="contact">Contact</h2>
         <div class="contact__container">
           <a
             class="contact__link"
@@ -147,10 +154,11 @@
     <footer role="contentinfo">
       <p><span id="current-year">2025 </span> Yuliia Martynovych</p>
     </footer>
-    <a href="#top" id="scrollTopBtn" aria-label="Back to top">🔝</a>
+
     <script>
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
     </script>
+    <a href="#top" class="scroll__top" aria-label="Back to top">🔝</a>
   </body>
 </html>
