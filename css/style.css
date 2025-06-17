@@ -63,6 +63,7 @@ body {
 .language-buttons button:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
 /* Estado activo */
 .language-buttons button.active {
   background: white;
@@ -257,3 +258,5 @@ footer {
 footer p {
   margin: 5px 0;
 }
+
+/* Modo oscuro */

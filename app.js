@@ -91,3 +91,5 @@ document.querySelectorAll(".language-buttons button").forEach((btn) => {
     translatePage(lang);
   });
 });
+
+// ==================== CAMBIO DE TEMA OSCURO ====================
