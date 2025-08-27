@@ -28,7 +28,7 @@ const translations = {
     my_projects: "My Projects",
     contact: "Contact",
     welcome:
-      "Hi, I'm Yuliia Martynovych, a programming student with knowledge of HTML, CSS, and basic JavaScript. I enjoy creating clean, user-friendly interfaces and constantly improving my coding skills.",
+      "Hi, I'm Yuliia Martynovych, a programming with knowledge of HTML, CSS, and basic JavaScript. I enjoy creating clean, user-friendly interfaces and constantly improving my coding skills.",
   },
   es: {
     title: "Yuliia Martynovych",
@@ -37,7 +37,7 @@ const translations = {
     my_projects: "Mis Proyectos",
     contact: "Contacto",
     welcome:
-      "Hola, soy Yuliia Martynovych, estudiante de programación con conocimientos de HTML, CSS y JavaScript básico. Disfruto creando interfaces claras y fáciles de usar, y mejorando constantemente mis habilidades de programación.",
+      "Hola, soy Yuliia Martynovych, programadora con conocimientos de HTML, CSS y JavaScript básico. Disfruto creando interfaces claras y fáciles de usar, y mejorando constantemente mis habilidades de programación.",
   },
   uk: {
     title: "Юлія Мартинович",
@@ -46,7 +46,7 @@ const translations = {
     my_projects: "Мої проекти",
     contact: "Контакти",
     welcome:
-      "Привіт, я Юлія Мартинович, студентка-програміст зі знанням HTML, CSS та основ JavaScript. Я захоплююся веб-дизайном та технологіями. Мені подобається створювати чисті, зручні інтерфейси та постійно вдосконалювати свої навички програмування.",
+      "Привіт, я Юлія Мартинович, програміст зі знанням HTML, CSS та основ JavaScript. Я захоплююся веб-дизайном та технологіями. Мені подобається створювати чисті, зручні інтерфейси та постійно вдосконалювати свої навички програмування.",
   },
 };
 
