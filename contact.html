@@ -101,10 +101,19 @@
             action="https://formspree.io/f/mreyeyww"
             method="POST"
           >
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Your email" required />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Your message..." required></textarea>
+            <input type="text" name="name" placeholder="Your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea
+              name="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
