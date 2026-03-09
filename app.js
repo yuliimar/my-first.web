@@ -93,3 +93,100 @@ document.querySelectorAll(".language-buttons button").forEach((btn) => {
 });
 
 // ==================== CAMBIO DE TEMA OSCURO ====================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollBtn = document.querySelector(".scroll__top");
+
+  // Mostrar/ocultar botón
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+      scrollBtn.classList.add("visible");
+    } else {
+      scrollBtn.classList.remove("visible");
+    }
+  });
+
+  scrollBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+
+// ==================== SISTEMA DE TRADUCCIÓN ====================
+const translations = {
+  en: {
+    title: "Yuliia Martynovych",
+    about: "About me",
+    projects: "Projects",
+    my_projects: "My Projects",
+    contact: "Contact",
+    welcome:
+      "Hi I'm a Frontend Developer passionate about creating modern, user-friendly, and responsive web applications. Skilled in HTML, CSS, SCSS, and JavaScript, with a strong foundation in UI/UX principles, clean design, and accessibility. Adaptable and detail-oriented, I bring teamwork, empathy, and customer focus to-every project. Constantly learning new tools and technologies to stay ahead in frontend development. Skills: HTML5, CSS3, Sass (SCSS), BEM, Material UI, Tailwind TypeScript, JavaScript React, Redux-toolkit Waterfall, Knowledge of SDLC, Agile concepts Git, GitHub, Visual Studio Code, Chrome DevTools, Terminal MySQL, PHP English B2, Spanish C2, Ukrainian Native.",
+  },
+  es: {
+    title: "Yuliia Martynovych",
+    about: "Sobre mí",
+    projects: "Proyectos",
+    my_projects: "Mis Proyectos",
+    contact: "Contacto",
+    welcome:
+      "Hola soy Desarrolladora frontend apasionada por crear aplicaciones web modernas, intuitivas y responsivas. Dominado por HTML, CSS, SCSS y JavaScript, con sólidos conocimientos de UI/UX, diseño limpio y accesibilidad. Adaptable y detallista, aporto trabajo en equipo, empatía y orientación al cliente a cada proyecto. Constantemente aprendo nuevas herramientas y tecnologías para mantenerme a la vanguardia en el desarrollo frontend.",
+  },
+  uk: {
+    title: "Юлія Мартинович",
+    about: "Про мене",
+    projects: "Проекти",
+    my_projects: "Мої проекти",
+    contact: "Контакти",
+    welcome:
+      "Привіт я Фронтенд-розробниця, захоплений створенням сучасних, зручних для користувача та адаптивних веб-додатків. Володію HTML, CSS, SCSS та JavaScript, маю міцні знання принципів UI/UX, чистого дизайну та доступності. Адаптивний та уважний до деталей, я привношу командну роботу, емпатію та клієнтоорієнтацію в кожен проект. Постійно вивчаю нові інструменти та технології, щоб залишатися на крок попереду у фронтенд-розробці.",
+  },
+};
+
+// Función para cambiar idioma
+
+function translatePage(lang) {
+  // Actualizar botones activos
+  document.querySelectorAll(".language-buttons button").forEach((btn) => {
+    btn.classList.remove("active");
+    if (
+      (lang === "en" && btn.textContent === "EN") ||
+      (lang === "es" && btn.textContent === "ES") ||
+      (lang === "uk" && btn.textContent === "UK")
+    ) {
+      btn.classList.add("active");
+    }
+  });
+
+  // Actualizar contenido
+  document.querySelectorAll("[data-translate]").forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  localStorage.setItem("language", lang);
+}
+
+// Inicialización (cargar idioma guardado o usar inglés por defecto)
+const savedLang = localStorage.getItem("language") || "en";
+translatePage(savedLang);
+
+// Eventos para los botones de idioma
+document.querySelectorAll(".language-buttons button").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const lang =
+      this.textContent === "EN"
+        ? "en"
+        : this.textContent === "ES"
+          ? "es"
+          : "uk";
+    translatePage(lang);
+  });
+});
+
+// ==================== CAMBIO DE TEMA OSCURO ====================
