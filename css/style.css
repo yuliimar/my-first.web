@@ -675,3 +675,138 @@ h3 {
     height: 120px;
   }
 }
+
+/* ===== ABOUT PAGE MEJORADA ===== */
+.about {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.about__content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-base);
+  text-align: left;
+}
+
+.about__content:hover {
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(-5px);
+}
+
+.about__intro {
+  margin-bottom: var(--space-2xl);
+}
+
+.about__text {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  color: var(--text-dark);
+  white-space: pre-line; /* Дозволяє переносити рядки */
+}
+
+.about__subtitle {
+  color: var(--active-color);
+  margin: var(--space-xl) 0 var(--space-lg);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  border-left: 4px solid var(--active-color);
+  padding-left: var(--space-md);
+  font-weight: 600;
+}
+
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.about__skill {
+  background: var(--primary-gradient);
+  color: white;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition-bounce);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__skill:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.about__languages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  background: #f8f8f8;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+.about__language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.about__language:last-child {
+  border-bottom: none;
+}
+
+.about__language-name {
+  font-weight: 600;
+  color: var(--active-color);
+  font-size: 1.1rem;
+}
+
+.about__language-level {
+  background: var(--primary-gradient);
+  color: white;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+  .about__content {
+    padding: var(--space-lg);
+  }
+
+  .about__skills {
+    gap: var(--space-xs);
+  }
+
+  .about__skill {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .about__language {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .about__language-level {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__content {
+    padding: var(--space-md);
+  }
+}
