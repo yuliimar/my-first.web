@@ -86,8 +86,8 @@ document.querySelectorAll(".language-buttons button").forEach((btn) => {
       this.textContent === "EN"
         ? "en"
         : this.textContent === "ES"
-        ? "es"
-        : "uk";
+          ? "es"
+          : "uk";
     translatePage(lang);
   });
 });
@@ -133,7 +133,7 @@ const translations = {
     my_projects: "Mis Proyectos",
     contact: "Contacto",
     welcome:
-      "Hola soy Desarrolladora frontend apasionada por crear aplicaciones web modernas, intuitivas y responsivas. Dominado por HTML, CSS, SCSS y JavaScript, con sólidos conocimientos de UI/UX, diseño limpio y accesibilidad. Adaptable y detallista, aporto trabajo en equipo, empatía y orientación al cliente a cada proyecto. Constantemente aprendo nuevas herramientas y tecnologías para mantenerme a la vanguardia en el desarrollo frontend.",
+      "Hola, soy desarrolladora front-end y me apasiona crear aplicaciones web modernas, intuitivas y responsivas. Tengo experiencia con HTML, CSS, SCSS y JavaScript, además de sólidos conocimientos de los principios de UI/UX, diseño limpio y accesibilidad. Soy atenta a los detalles, y disfruto trabajando en equipo e individualmente. Constantemente aprendo nuevas herramientas y tecnologías para mantenerme a la vanguardia del desarrollo front-end. Cuento con: HTML5, CSS3, Sass (SCSS), BEM, Material UI, Tailwind TypeScript, JavaScript React, Redux-toolkit Waterfall, conocimientos de SDLC, conceptos ágiles, Git, GitHub, Visual Studio Code, Chrome DevTools, Terminal, MySQL, PHP. Hablo inglés B2, español C2 y mi lengua materna ucraniano.",
   },
   uk: {
     title: "Юлія Мартинович",
@@ -142,7 +142,7 @@ const translations = {
     my_projects: "Мої проекти",
     contact: "Контакти",
     welcome:
-      "Привіт я Фронтенд-розробниця, захоплений створенням сучасних, зручних для користувача та адаптивних веб-додатків. Володію HTML, CSS, SCSS та JavaScript, маю міцні знання принципів UI/UX, чистого дизайну та доступності. Адаптивний та уважний до деталей, я привношу командну роботу, емпатію та клієнтоорієнтацію в кожен проект. Постійно вивчаю нові інструменти та технології, щоб залишатися на крок попереду у фронтенд-розробці.",
+      "Вітаю, я фронтенд-розробниця, захоплена створенням сучасних, інтуїтивно зрозумілих та адаптивних веб-додатків. Маю досвід роботи з HTML, CSS, SCSS та JavaScript, а також міцні знання принципів UI/UX, чистого дизайну та доступності. Я адаптивна та уважна до деталей, також люблю командну та самостійну роботу. Я постійно вивчаю нові інструменти та технології, щоб залишатися на передовій фронтенд-розробки. Володію: HTML5, CSS3, Sass (SCSS), BEM, Material UI, Tailwind TypeScript, JavaScript React, Redux-toolkit Waterfall, знання SDLC, Agile-концепції, Git, GitHub, Visual Studio Code, Chrome DevTools, Terminal, MySQL, PHP. Володію англійською B2, іспанською C2 та рідною українською мовами.",
   },
 };
 
@@ -188,5 +188,3 @@ document.querySelectorAll(".language-buttons button").forEach((btn) => {
     translatePage(lang);
   });
 });
-
-// ==================== CAMBIO DE TEMA OSCURO ====================
