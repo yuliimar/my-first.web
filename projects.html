@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuliia Martynovych - Proyectos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/YM.ico" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <main>
+      <section class="section" id="projects">
+        <h2 data-translate="my_projects">My Projects</h2>
+
+        <div class="projects">
+          <div class="project__card">
+            <h3>Landing Page B&O</h3>
+            <p class="project__card-text">
+              <strong>WEB Designer | Mar 2025</strong><br /><br />
+              B&O Landing Page es un sitio web responsive y mobile-first
+              construido con HTML semántico y SCSS utilizando la metodología
+              BEM. Muestra productos, categorías, información de la empresa y un
+              formulario de contacto con un diseño limpio impulsado por Flexbox
+              y CSS Grid.
+            </p>
+            <div class="project-links">
+              <a href="https://yuliimar.github.io/b-q-page/" target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/yuliimar/b-q-page" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project__card">
+            <h3>2048 Game</h3>
+            <p class="project__card-text">
+              <strong>Frontend Developer | Jun 2025</strong><br /><br />
+              2048 Game es un juego de puzzle clásico construido con JavaScript
+              (clases ES6), HTML y SCSS. Incluye la lógica completa del juego,
+              seguimiento de puntuación, estados de victoria/derrota, controles
+              de teclado y un diseño de cuadrícula responsive impulsado por
+              Gulp.
+            </p>
+            <div class="project-links">
+              <a href="https://yuliimar.github.io/js_2048_game/" target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/yuliimar/js_2048_game/tree/develop"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project__card">
+            <h3>Catalog Phone React</h3>
+            <p class="project__card-text">
+              <strong>UI Frontend Developer | Nov 2025</strong><br /><br />
+              Catalog Phone React es un catálogo de productos e-commerce
+              responsive construido con React 18 y TypeScript. Incluye
+              funcionalidad de carrito de compras, gestión de favoritos,
+              filtrado y ordenación de productos, gestión de estado persistente
+              y una arquitectura moderna y escalable.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://yuliimar.github.io/catalog-phone-react/"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/yuliimar/catalog-phone-react" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+        
+       
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">
+        <span id="current-year"></span> Yuliia Martynovych
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <a href="#top" class="scroll__top" aria-label="Back to top">🔝</a>
+  </body>
+</html>

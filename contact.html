@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuliia Martynovych - Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/YM.ico" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main>
+      <section class="section contact" id="contact">
+        <h2 data-translate="contact">Contact</h2>
+
+        <div class="contact__content">
+          <div class="contact__container">
+            <a
+              class="contact__link"
+              href="mailto:yuliiamartynovych@gmail.com"
+              aria-label="Enviar email"
+            >
+              <img
+                class="contact__icon"
+                src="img/gmail.png"
+                alt="Email Yuliia"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              class="contact__link"
+              href="https://wa.me/+34689287088"
+              target="_blank"
+              rel="noopener"
+              aria-label="Contactar por WhatsApp"
+            >
+              <img
+                class="contact__icon"
+                src="img/whatsapp.png"
+                alt="Whatsapp Yuliia"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/yuliia-martynovych-01570817b"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn Yuliia"
+            >
+              <img
+                class="contact__icon"
+                src="img/linkedin.png"
+                alt="Linkedin Yuliia"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </a>
+
+            <a
+              class="contact__link"
+              href="https://github.com/yuliimar"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub Yuliia"
+            >
+              <img
+                class="contact__icon"
+                src="img/github.png"
+                alt="GitHub Yuliia"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
+          <h3
+            style="
+              color: var(--active-color);
+              margin: var(--space-xl) 0 var(--space-md);
+            "
+          >
+            Send me a direct message:
+          </h3>
+
+          <form class="contact__form" action="#" method="POST">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your message..." required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">
+        <span id="current-year"></span> Yuliia Martynovych
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <a href="#top" class="scroll__top" aria-label="Back to top">🔝</a>
+  </body>
+</html>

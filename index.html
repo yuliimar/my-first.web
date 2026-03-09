@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-=======
 <!doctype html>
->>>>>>> b408afd (Initial import from local copy)
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,295 +16,61 @@
   <body>
     <header class="header" id="top" role="banner">
       <img
-<<<<<<< HEAD
-        src="img/perfil.jpg"
-=======
         src="img/perfil.jpeg"
->>>>>>> b408afd (Initial import from local copy)
         alt="portrait of Yuliia Martynovych"
         class="profile-photo"
       />
 
       <div class="language-buttons">
-        <button onclick="translatePage('en')">EN</button>
-        <button onclick="translatePage('es')">ES</button>
-        <button onclick="translatePage('uk')">UK</button>
+        <button class="lang-btn" onclick="translatePage('en')">EN</button>
+        <button class="lang-btn" onclick="translatePage('es')">ES</button>
+        <button class="lang-btn" onclick="translatePage('uk')">UK</button>
       </div>
 
-      <h1 data-translate="title">Yuliia Martynovych</h1>
-      <nav class="header__info" role="navigation" aria-label="Main menu">
+      <h1>Frontend Developer</h1>
+
+      <nav class="header__nav" role="navigation" aria-label="Main menu">
         <ul>
-          <li><a data-translate="about" href="#about">About me</a></li>
-          <li><a data-translate="projects" href="#projects">Projects</a></li>
-          <li><a data-translate="contact" href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="index.html"
+              class="nav-link"
+              data-translate="about"
+              id="nav-about"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="nav-link"
+              data-translate="projects"
+              id="nav-projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="nav-link"
+              data-translate="contact"
+              id="nav-contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="about" id="about">
         <h2 data-translate="about">About me</h2>
-<<<<<<< HEAD
-        <p data-translate="welcome">
-<<<<<<< HEAD
-          Hi, I'm Yuliia Martynovych, a programming student with knowledge of
-          HTML, CSS, and basic JavaScript. I'm passionate about web design and
-          technology. I enjoy creating clean, user-friendly interfaces and
-          constantly improving my coding skills.
-=======
-          Summary Frontend Developer passionate about creating modern,
-          user-friendly, and responsive web applications. Skilled in HTML, CSS,
-          SCSS, and JavaScript, with a strong foundation in UI/UX principles,
-          clean design, and accessibility. Adaptable and detail-oriented, I
-          bring teamwork, empathy, and customer focus to-every project.
-          Constantly learning new tools and technologies to stay ahead in
-          frontend development.
-          <br />
-          Skills: HTML5, CSS3, Sass (SCSS), BEM, Material UI, Tailwind
-          TypeScript, JavaScript React, Redux-toolkit Waterfall, Knowledge of
-          SDLC, Agile concepts Git, GitHub, Visual Studio Code, Chrome DevTools,
-          Terminal MySQL, PHP English B2, Spanish C2, Ukrainian Native.
->>>>>>> b408afd (Initial import from local copy)
-        </p>
-=======
         <p data-translate="welcome"></p>
->>>>>>> 9e2f71d (add about me)
-      </section>
-
-      <section class="projects" id="projects">
-        <h2 data-translate="my_projects">My Projects</h2>
-
-        <div class="project__card">
-<<<<<<< HEAD
-          <h3>Landing Page</h3>
-          <p class="project__card-text">
-            A responsive landing page with a modern design, created with HTML
-            and CSS.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://yuliimar.github.io/layout_landing-page/"
-              target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-              href="https://github.com/yuliimar/layout_landing-page/tree/develop"
-=======
-          <h3>Landing Page B&O</h3>
-          <p class="project__card-text">
-            WEB Designer Mar 2025
-            <br />
-            B&O Landing Page is a responsive, mobile-first website built with
-            semantic HTML and SCSS using the BEM methodology, showcasing
-            products, categories, company information, and a contact form with a
-            clean layout powered by Flexbox and CSS Grid.
-          </p>
-          <div class="project-links">
-            <a href="https://yuliimar.github.io/b-q-page/" target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a href="https://github.com/yuliimar/b-q-page" target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-
-        <div class="project__card">
-          <h3>2048 Game</h3>
-          <p class="project__card-text">
-            Frontend Developer Jun 2025
-            <br />
-            2048 Game is a classic puzzle game built with JavaScript (ES6
-            classes), HTML, and SCSS, featuring full game logic, score tracking,
-            win/lose states, keyboard controls, and a responsive grid layout
-            powered by Gulp.
-          </p>
-          <div class="project-links">
-            <a href="https://yuliimar.github.io/js_2048_game/" target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-              href="https://github.com/yuliimar/js_2048_game/tree/develop"
->>>>>>> b408afd (Initial import from local copy)
-              target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-
-        <div class="project__card">
-<<<<<<< HEAD
-          <h3>Calendar</h3>
-          <p class="project__card-text">
-            Interactive calendar with basic month navigation elements.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://yuliimar.github.io/layout_calendar/"
-=======
-          <h3>Catalog Phone React</h3>
-          <p class="project__card-text">
-            UI Frontend Developer Nov 2025
-            <br />
-            Catalog Phone React is a responsive e-commerce product catalog built
-            with React18 and TypeScript, featuring shopping cart functionality,
-            favorites management, product filtering and sorting, persistent
-            state management, and a modern, scalable architecture.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://yuliimar.github.io/catalog-phone-react/"
->>>>>>> b408afd (Initial import from local copy)
-              target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-<<<<<<< HEAD
-              href="https://github.com/yuliimar/layout_calendar/tree/develop"
-=======
-              href="https://github.com/yuliimar/catalog-phone-react"
->>>>>>> b408afd (Initial import from local copy)
-              target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> b408afd (Initial import from local copy)
-        <div class="project__card">
-          <h3>Movies List</h3>
-          <p class="project__card-text">
-            Movies List is a web application built with React that displays a
-            list of movies fetched from an API. The main focus of the project
-            was code organization and component reuse.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://yuliimar.github.io/react_movies-list-js/"
-              target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-              href="https://github.com/yuliimar/react_movies-list-js/tree/develop"
-              target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-
-        <div class="project__card">
-          <h3>Movie Filter with Dynamic Search</h3>
-          <p class="project__card-text">
-            Tech: React, Hooks (useState, useMemo), SCSS. Implemented real-time
-            search with movie filtering by title/description. Optimized
-            performance via useMemo to prevent unnecessary re-renders. Added
-            case-insensitive search with whitespace trimming. Followed
-            component-based architecture for reusable code. Styled responsive
-            layout using CSS Grid/Flexbox (Bulma framework). Outcome: A
-            user-friendly interface with instant search feedback.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://yuliimar.github.io/react_movies-list-filter-js/"
-              target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-              href="https://github.com/yuliimar/react_movies-list-filter-js/tree/develop"
-              target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-<<<<<<< HEAD
-
-        <div class="project__card">
-          <h3>2048 Game</h3>
-          <p class="project__card-text">
-            Classic puzzle game built with JavaScript, HTML, and CSS.
-            Implemented full game logic (OOP, state management, score tracking,
-            win/lose detection) and interactive UI with responsive design.
-          </p>
-          <div class="project-links">
-            <a href="https://yuliimar.github.io/js_2048_game/" target="_blank"
-              >🌐 Live Demo</a
-            >
-            <a
-              href="https://github.com/yuliimar/js_2048_game/tree/develop"
-              target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-=======
->>>>>>> b408afd (Initial import from local copy)
-      </section>
-
-      <section class="contact" id="contact">
-        <h2 data-translate="contact">Contact</h2>
-        <div class="contact__container">
-          <a
-            class="contact__link"
-            href="mailto:yuliiamartynovych@gmail.com"
-            aria-label="Send email"
-            ><img
-              class="contact__icon"
-              src="img/gmail.png"
-              alt="Email Yuliia"
-              width="40"
-              height="40"
-              loading="lazy"
-          /></a>
-
-          <a
-            class="contact__link"
-            href="https://wa.me/+34689287088"
-            target="_blank"
-            rel="noopener"
-            aria-label="Contact by WhatsApp"
-            ><img
-              class="contact__icon"
-              src="img/whatsapp.png"
-              alt="Whatsapp Yuliia"
-              width="40"
-              height="40"
-              loading="lazy"
-          /></a>
-          <a
-            class="contact__link"
-            href="https://www.linkedin.com/in/yuliia-martynovych-01570817b"
-            target="_blank"
-            rel="noopener"
-            aria-label="Linkedin Yuliia"
-            ><img
-              class="contact__icon"
-              src="img/linkedin.png"
-              alt="Linkedin Yuliia"
-              width="40"
-              height="40"
-              loading="lazy"
-          /></a>
-          <a
-            class="contact__link"
-            href="https://github.com/yuliimar"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub Yuliia"
-            ><img
-              class="contact__icon"
-              src="img/github.png"
-              alt="GitHub Yuliia"
-              width="40"
-              height="40"
-              loading="lazy"
-          /></a>
-        </div>
       </section>
     </main>
-
-    <footer role="contentinfo">
-      <p><span id="current-year">2025 </span> Yuliia Martynovych</p>
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">
+        <span id="current-year"></span> Yuliia Martynovych
+      </p>
     </footer>
 
     <script>
