@@ -108,8 +108,8 @@ const translations = {
   },
   uk: {
     about: "Про мене",
-    projects: "Проекти",
-    my_projects: "Мої проекти",
+    projects: "Проєкти",
+    my_projects: "Мої проєкти",
     contact: "Контакти",
     welcome:
       "Вітаю, я фронтенд-розробниця, захоплена створенням сучасних, інтуїтивно зрозумілих та адаптивних веб-додатків. Маю досвід роботи з HTML, CSS, SCSS та JavaScript, а також міцні знання принципів UI/UX, чистого дизайну та доступності. Я адаптивна та уважна до деталей, також люблю командну та самостійну роботу. Я постійно вивчаю нові інструменти та технології, щоб залишатися на передовій фронтенд-розробки. Володію: HTML5, CSS3, Sass (SCSS), BEM, Material UI, Tailwind TypeScript, JavaScript React, Redux-toolkit Waterfall, знання SDLC, Agile-концепції, Git, GitHub, Visual Studio Code, Chrome DevTools, Terminal, MySQL, PHP. Володію англійською B2, іспанською C2 та рідною українською.",
