@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     history.scrollRestoration = "manual";
   }
 
-  // ========== LOAD HEADER ==========
   function loadHeader() {
     const headerContainer = document.getElementById("header-container");
 
@@ -129,7 +128,6 @@ function translatePage(lang) {
       }
     });
 
-    // Оновити контент
     document.querySelectorAll("[data-translate]").forEach((element) => {
       const key = element.getAttribute("data-translate");
       if (translations[lang] && translations[lang][key]) {
